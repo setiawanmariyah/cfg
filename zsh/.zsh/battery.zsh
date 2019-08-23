@@ -1,6 +1,6 @@
 function battery_charge {
-    b_now=$(< /sys/class/power_supply/BAT0/energy_now)
-    b_full=$(< /sys/class/power_supply/BAT0/energy_full)
+    b_now=$(< /sys/class/power_supply/BAT0/charge_now)
+    b_full=$(< /sys/class/power_supply/BAT0/charge_full)
     b_status=$(< /sys/class/power_supply/BAT0/status)
     charge=$(( (b_now * 10) / b_full ))
 
