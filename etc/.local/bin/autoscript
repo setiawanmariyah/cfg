@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-scripts_dir="$HOME/bin"
+scripts_dir="$HOME/.local/bin"
 script_file="$scripts_dir/$1"
 
 
