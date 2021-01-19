@@ -679,7 +679,7 @@ wallpaper ()
 gr()
 {
   # Search recursively with grep
-  grep --color=auto -R "$*"
+  grep -R "$*"
 }
 
 calc()

@@ -18,8 +18,8 @@ fi
 
 if [[ $commands[colorls] ]]; then
   alias ls='colorls --almost-all --git-status --group-directories-first'
-else
-  alias ls='ls --color=auto'
+# else
+#   alias ls='ls --color=auto'
 fi
 
 if [[ $commands[todo.sh] ]]; then
@@ -45,4 +45,10 @@ if [[ $commands[systemctl] ]]; then
  alias sscens='sudo systemctl enable --now'
  alias sscds='sudo systemctl disable'
  alias sscdsn='sudo systemctl disable --now'
+fi
+
+if [[ $commands[gpg2] ]]; then
+    alias gpg=gpg2
+else
+    pass
 fi
