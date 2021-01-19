@@ -56,7 +56,7 @@
 [difftool "icdiff"]
         cmd = icdiff --line-numbers $LOCAL $REMOTE
 [gpg]
-	program = gpg
+	program = gpg2
 [core]
 	autocrlf = input
 	safecrlf = true
